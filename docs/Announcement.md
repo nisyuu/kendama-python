@@ -2,6 +2,7 @@
 
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **sequence_number** | **str** | 一連番号 | 
@@ -39,12 +40,12 @@ json = "{}"
 # create an instance of Announcement from a JSON string
 announcement_instance = Announcement.from_json(json)
 # print the JSON string representation of the object
-print Announcement.to_json()
+print(Announcement.to_json())
 
 # convert the object into a dict
 announcement_dict = announcement_instance.to_dict()
 # create an instance of Announcement from a dict
-announcement_form_dict = announcement.from_dict(announcement_dict)
+announcement_from_dict = Announcement.from_dict(announcement_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
