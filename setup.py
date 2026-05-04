@@ -1,5 +1,3 @@
-# coding: utf-8
-
 """
     国税庁API
 
@@ -22,31 +20,29 @@ from setuptools import setup, find_packages  # noqa: H301
 # http://pypi.python.org/pypi/setuptools
 NAME = "kendama"
 VERSION = "0.1.3"
-PYTHON_REQUIRES = ">=3.7"
+PYTHON_REQUIRES = ">= 3.10"
 REQUIRES = [
-    "urllib3 >= 1.25.3, < 2.1.0",
-    "python-dateutil",
-    "pydantic >= 1.10.5, < 3",
-    "aenum"
+    "urllib3 >= 2.1.0, < 3.0.0",
+    "python-dateutil >= 2.8.2",
+    "pydantic >= 2.11",
+    "typing-extensions >= 4.7.1",
 ]
 
 setup(
     name=NAME,
     version=VERSION,
     description="国税庁API",
-    author="uichi",
-    author_email="37263474+uichi@users.noreply.github.com",
-    url="https://github.com/uichi/kendama-python",
+    author="nisyuu",
+    author_email="37263474+nisyuu@users.noreply.github.com",
+    url="https://github.com/nisyuu/kendama-python",
     license="MIT",
     keywords=["OpenAPI", "OpenAPI-Generator", "国税庁API"],
     install_requires=REQUIRES,
     packages=find_packages(exclude=["test", "tests"]),
     include_package_data=True,
     long_description_content_type='text/markdown',
-    long_description=open('README.md').read(),
+    long_description="""\
+    国税庁が提供するインボイス制度適格請求書発行事業者公表システムWeb-APIを使用するためのクライアントAPI(https://www.invoice-kohyo.nta.go.jp/web-api/index.html)
+    """,  # noqa: E501
     package_data={"kendama": ["py.typed"]},
-    project_urls={
-        'Documentation': 'https://github.com/uichi/kendama-python/blob/main/README.md',
-        'Source': 'https://github.com/uichi/kendama-python'
-    }
 )

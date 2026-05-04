@@ -18,9 +18,8 @@ Method | HTTP request | Description
 
 ### Example
 
+
 ```python
-import time
-import os
 import kendama
 from kendama.models.response_body import ResponseBody
 from kendama.rest import ApiException
@@ -40,8 +39,8 @@ with kendama.ApiClient(configuration) as api_client:
     id = 'id_example' # str | 
     var_from = 'Tue Oct 01 09:00:00 JST 2024' # date | 
     to = 'Tue Oct 01 09:00:00 JST 2024' # date | 
-    type = '21' # str |  (default to '21')
-    division = '1' # str |  (optional) (default to '1')
+    type = 21 # str |  (default to 21)
+    division = 1 # str |  (optional) (default to 1)
     divide = '1' # str |  (optional) (default to '1')
 
     try:
@@ -57,13 +56,14 @@ with kendama.ApiClient(configuration) as api_client:
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**|  | 
  **var_from** | **date**|  | 
  **to** | **date**|  | 
- **type** | **str**|  | [default to &#39;21&#39;]
- **division** | **str**|  | [optional] [default to &#39;1&#39;]
+ **type** | **str**|  | [default to 21]
+ **division** | **str**|  | [optional] [default to 1]
  **divide** | **str**|  | [optional] [default to &#39;1&#39;]
 
 ### Return type
@@ -80,6 +80,7 @@ No authorization required
  - **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | 成功 |  -  |
@@ -95,9 +96,8 @@ No authorization required
 
 ### Example
 
+
 ```python
-import time
-import os
 import kendama
 from kendama.models.response_body import ResponseBody
 from kendama.rest import ApiException
@@ -116,7 +116,7 @@ with kendama.ApiClient(configuration) as api_client:
     api_instance = kendama.V1Api(api_client)
     id = 'id_example' # str | 
     number = 'T8040001999011' # str | 
-    type = '21' # str |  (default to '21')
+    type = 21 # str |  (default to 21)
     history = '0' # str |  (optional)
 
     try:
@@ -132,11 +132,12 @@ with kendama.ApiClient(configuration) as api_client:
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**|  | 
  **number** | **str**|  | 
- **type** | **str**|  | [default to &#39;21&#39;]
+ **type** | **str**|  | [default to 21]
  **history** | **str**|  | [optional] 
 
 ### Return type
@@ -153,6 +154,7 @@ No authorization required
  - **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | 成功 |  -  |
@@ -168,9 +170,8 @@ No authorization required
 
 ### Example
 
+
 ```python
-import time
-import os
 import kendama
 from kendama.models.response_body import ResponseBody
 from kendama.rest import ApiException
@@ -190,7 +191,7 @@ with kendama.ApiClient(configuration) as api_client:
     id = 'id_example' # str | 
     number = 'T8040001999011' # str | 
     day = 'Fri Dec 01 09:00:00 JST 2023' # date | 
-    type = '21' # str |  (default to '21')
+    type = 21 # str |  (default to 21)
 
     try:
         # 登録番号と日付を指定して情報を取得
@@ -205,12 +206,13 @@ with kendama.ApiClient(configuration) as api_client:
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **str**|  | 
  **number** | **str**|  | 
  **day** | **date**|  | 
- **type** | **str**|  | [default to &#39;21&#39;]
+ **type** | **str**|  | [default to 21]
 
 ### Return type
 
@@ -226,6 +228,7 @@ No authorization required
  - **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | 成功 |  -  |

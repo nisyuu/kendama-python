@@ -12,7 +12,7 @@
     Do not edit the class manually.
 """  # noqa: E501
 
-
 # import models into model package
 from kendama.models.announcement import Announcement
 from kendama.models.response_body import ResponseBody
+
